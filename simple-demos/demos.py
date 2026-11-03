@@ -1,3 +1,10 @@
+
+if __name__ == "__main__":
+    args = [float(x) for x in sys.argv[1:]]
+    if len(args) == 0:
+        print(args[1])
+
+
 try:
     from Backend.models import Product, ProductList
 except ModuleNotFoundError:
